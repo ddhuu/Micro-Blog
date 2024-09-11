@@ -1,5 +1,4 @@
-import React, { useDebugValue, useState } from "react";
-
+import React, { useState } from "react";
 import axios from "axios";
 
 const CommentCreate = ({ postId }) => {
@@ -16,13 +15,16 @@ const CommentCreate = ({ postId }) => {
   return (
     <form className="form-group" onSubmit={onSubmit}>
       <div className="form-group">
-        <label> New Comment</label>
+        <label>New Comment</label>
         <input
           className="form-control"
           value={content}
-          onChange={(e) => setContent(e.tartget.value)}
+          onChange={(e) => setContent(e.target.value)}
         />
       </div>
+      <button className="btn btn-primary" type="submit">
+        Submit
+      </button>
     </form>
   );
 };

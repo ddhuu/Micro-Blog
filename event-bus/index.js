@@ -22,8 +22,6 @@ app.post("/events", (req, res) => {
   res.send({ status: "OK" });
 });
 
-
-
 app.get("/events", (req, res) => {
   res.send(events);
 });

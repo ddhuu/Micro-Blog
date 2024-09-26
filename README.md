@@ -1,2 +1,2 @@
 ## System Architecture
-![System Architecture](/docs/Architecture.png)
+![System Architecture](/docs/Architect.png)
